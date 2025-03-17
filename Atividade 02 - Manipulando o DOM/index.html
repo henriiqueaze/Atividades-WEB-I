@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando o DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Interagindo com JavaScript!</h1>
+    <p id="texto">Este texto será modificado.</p>
+
+    <button id="btnTrocarTexto">Trocar Texto</button>
+    <button id="btnMudarCor">Mudar Cor</button>
+    <button id="btnToggle">Esconder/Mostrar</button>
+    <button id="btnAdicionar">Adicionar Elemento</button>
+    <button id="btnMudarCorFundo">Mudar cor de fundo</button>
+    <button id="btnAdicionarInput">Adicionar Input</button>
+    <button id="btnEnviar" style="display: none;">Enviar</button>
+    <button id="btnRemover">Ativar Remoção</button>
+
+    <div id="erro" style="display: none; color: red;">
+      Erro: Só é permitido um input por vez!
+    </div>
+
+    <div id="inputsContainer"></div>
+    <div id="container"></div>
+    <div id="textoExibido"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

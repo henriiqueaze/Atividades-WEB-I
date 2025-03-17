@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+.destacado {
+  font-weight: bold;
+  color: red;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+#inputsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#erro {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+#btnEnviar {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 220px;
+}
