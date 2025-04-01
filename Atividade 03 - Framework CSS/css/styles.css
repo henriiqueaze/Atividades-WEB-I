@@ -1,0 +1,155 @@
+/* Arquivo: css/style.css */
+
+/* Estilos gerais para o site */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar {
+    padding: 0;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #007bff;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff;
+}
+
+/* Espaçamento entre as seções */
+section {
+    padding: 80px 20px;
+}
+
+/* Seção de Serviços */
+#servicos h2, #servicos h4 {
+    font-weight: 600;
+    color: #333;
+}
+
+#servicos .service-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+/* Estilo para o Rodapé */
+footer.footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 30px 0;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Carrossel de Imagens */
+.carousel-item img {
+    border-radius: 8px;
+    max-height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Tabela de Preços */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+}
