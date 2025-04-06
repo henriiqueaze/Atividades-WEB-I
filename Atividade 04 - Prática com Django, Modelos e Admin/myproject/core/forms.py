@@ -6,8 +6,8 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = ['name', 'price', 'available', 'category']
         widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nome do produto'}),
-            'price': forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Preço'}),
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Product Name'}),
+            'price': forms.NumberInput(attrs={'class': 'form-control', 'placeholder': 'Price'}),
             'available': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
             'category': forms.Select(attrs={'class': 'form-select'}),
         }
@@ -17,9 +17,9 @@ class ClientForm(forms.ModelForm):
         model = Client
         fields = ['full_name', 'email', 'born_date', 'is_active']
         widgets = {
-            'full_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nome completo'}),
+            'full_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Full Name'}),
             'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Email'}),
-            'born_date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
+            'born_date': forms.DateInput(attrs={'class': 'form-control', 'type': 'date', 'placeholder': 'Birth Date'}),
             'is_active': forms.CheckboxInput(attrs={'class': 'form-check-input'}),
         }
 
@@ -28,6 +28,6 @@ class CategoryForm(forms.ModelForm):
         model = Category
         fields = ['name', 'description']
         widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nome da categoria'}),
-            'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Descrição (opcional)', 'rows': 3}),
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Category Name'}),
+            'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Description (optional)', 'rows': 3}),
         }

@@ -33,10 +33,10 @@ def create_category(request):
     return render(request, 'core/create_category.html', {'form': form})
 
 def product_success(request):
-    return HttpResponse("Produto cadastrado com sucesso!")
+    return HttpResponse("Product registered successfully!")
 
 def client_success(request):
-    return HttpResponse("Cliente cadastrado com sucesso!")
+    return HttpResponse("Client registered successfully!")
 
 def category_success(request):
-    return HttpResponse("Categoria cadastrada com sucesso!")
+    return HttpResponse("Category registered successfully!")
