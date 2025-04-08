@@ -3,27 +3,31 @@
 {% block title %}Register Client{% endblock %}
 
 {% block content %}
-<div class="card shadow p-4">
-    <h2 class="mb-4">Register Client</h2>
-    <form method="post">
-        {% csrf_token %}
-        <div class="mb-3">
-            {{ form.full_name.label_tag }}
-            {{ form.full_name }}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+        <div class="card shadow p-4">
+            <h2 class="mb-4 text-center">Register Client</h2>
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    {{ form.full_name.label_tag }}
+                    {{ form.full_name }}
+                </div>
+                <div class="mb-3">
+                    {{ form.email.label_tag }}
+                    {{ form.email }}
+                </div>
+                <div class="mb-3">
+                    {{ form.born_date.label_tag }}
+                    {{ form.born_date }}
+                </div>
+                <div class="form-check mb-3">
+                    {{ form.is_active }}
+                    {{ form.is_active.label_tag }}
+                </div>
+                <button type="submit" class="btn btn-success w-100">Save Client</button>
+            </form>
         </div>
-        <div class="mb-3">
-            {{ form.email.label_tag }}
-            {{ form.email }}
-        </div>
-        <div class="mb-3">
-            {{ form.born_date.label_tag }}
-            {{ form.born_date }}
-        </div>
-        <div class="form-check mb-3">
-            {{ form.is_active }}
-            {{ form.is_active.label_tag }}
-        </div>
-        <button type="submit" class="btn btn-success">Save Client</button>
-    </form>
+    </div>
 </div>
 {% endblock %}
