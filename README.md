@@ -1,6 +1,6 @@
 # Atividades da Disciplina WEB 1 🎓
 
-Este repositório faz parte da disciplina de **Desenvolvimento Web I** no curso de Análise e Desenvolvimento de Sistemas da UNIFIP, ministrada pelo professor José Matheus.
+Este repositório faz parte da disciplina de **Desenvolvimento Web I** no curso de Análise e Desenvolvimento de Sistemas da UNIFIP, ministrada pelo professor <a href="https://github.com/matheuslima25" target="_blank">Matheus Lima</a>.
 
 ## Descrição 📚
 
