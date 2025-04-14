@@ -1,0 +1,372 @@
+[
+    {
+        "model": "core.cliente",
+        "pk": 1,
+        "fields": {
+            "nome": "Alice Souza",
+            "email": "alice.silva@example.com",
+            "ativo": false
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 2,
+        "fields": {
+            "nome": "Bruno Souza",
+            "email": "bruno.souza@example.com",
+            "ativo": true
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 3,
+        "fields": {
+            "nome": "Carla Oliveira",
+            "email": "carla.oliveira@example.com",
+            "ativo": false
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 4,
+        "fields": {
+            "nome": "Daniel Pereira",
+            "email": "daniel.pereira@example.com",
+            "ativo": true
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 5,
+        "fields": {
+            "nome": "Eduarda Lima",
+            "email": "eduarda.lima@example.com",
+            "ativo": false
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 6,
+        "fields": {
+            "nome": "Felipe Gomes",
+            "email": "felipe.gomes@example.com",
+            "ativo": true
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 7,
+        "fields": {
+            "nome": "Gabriela Ribeiro",
+            "email": "gabriela.ribeiro@example.com",
+            "ativo": false
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 8,
+        "fields": {
+            "nome": "Henrique Almeida",
+            "email": "henrique.almeida@example.com",
+            "ativo": true
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 9,
+        "fields": {
+            "nome": "Isabela Fernandes",
+            "email": "isabela.fernandes@example.com",
+            "ativo": false
+        }
+    },
+    {
+        "model": "core.cliente",
+        "pk": 10,
+        "fields": {
+            "nome": "João Cavalcanti",
+            "email": "joão.cavalcanti@example.com",
+            "ativo": true
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 1,
+        "fields": {
+            "nome": "Camiseta Polo",
+            "preco": "15.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 2,
+        "fields": {
+            "nome": "Tênis Esportivo",
+            "preco": "25.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 3,
+        "fields": {
+            "nome": "Smartphone Y20",
+            "preco": "35.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 4,
+        "fields": {
+            "nome": "Notebook ProBook",
+            "preco": "45.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 5,
+        "fields": {
+            "nome": "Fone Bluetooth",
+            "preco": "55.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 6,
+        "fields": {
+            "nome": "Relógio Digital",
+            "preco": "65.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 7,
+        "fields": {
+            "nome": "Mochila Executiva",
+            "preco": "75.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 8,
+        "fields": {
+            "nome": "Cafeteira Elétrica",
+            "preco": "85.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 9,
+        "fields": {
+            "nome": "Monitor LED",
+            "preco": "95.00"
+        }
+    },
+    {
+        "model": "core.produto",
+        "pk": 10,
+        "fields": {
+            "nome": "Impressora Multifuncional",
+            "preco": "105.00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 1,
+        "fields": {
+            "cliente": 1,
+            "produto": 2,
+            "quantidade": 2,
+            "criado_em": "2024-04-02T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 2,
+        "fields": {
+            "cliente": 1,
+            "produto": 3,
+            "quantidade": 3,
+            "criado_em": "2024-04-03T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 3,
+        "fields": {
+            "cliente": 2,
+            "produto": 4,
+            "quantidade": 4,
+            "criado_em": "2024-04-04T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 4,
+        "fields": {
+            "cliente": 2,
+            "produto": 5,
+            "quantidade": 5,
+            "criado_em": "2024-04-05T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 5,
+        "fields": {
+            "cliente": 2,
+            "produto": 6,
+            "quantidade": 1,
+            "criado_em": "2024-04-06T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 6,
+        "fields": {
+            "cliente": 3,
+            "produto": 7,
+            "quantidade": 2,
+            "criado_em": "2024-04-07T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 7,
+        "fields": {
+            "cliente": 4,
+            "produto": 8,
+            "quantidade": 3,
+            "criado_em": "2024-04-08T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 8,
+        "fields": {
+            "cliente": 4,
+            "produto": 9,
+            "quantidade": 4,
+            "criado_em": "2024-04-09T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 9,
+        "fields": {
+            "cliente": 5,
+            "produto": 10,
+            "quantidade": 5,
+            "criado_em": "2024-04-10T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 10,
+        "fields": {
+            "cliente": 5,
+            "produto": 1,
+            "quantidade": 1,
+            "criado_em": "2024-04-11T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 11,
+        "fields": {
+            "cliente": 5,
+            "produto": 2,
+            "quantidade": 2,
+            "criado_em": "2024-04-12T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 12,
+        "fields": {
+            "cliente": 6,
+            "produto": 3,
+            "quantidade": 3,
+            "criado_em": "2024-04-13T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 13,
+        "fields": {
+            "cliente": 7,
+            "produto": 4,
+            "quantidade": 4,
+            "criado_em": "2024-04-14T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 14,
+        "fields": {
+            "cliente": 7,
+            "produto": 5,
+            "quantidade": 5,
+            "criado_em": "2024-04-15T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 15,
+        "fields": {
+            "cliente": 8,
+            "produto": 6,
+            "quantidade": 1,
+            "criado_em": "2024-04-16T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 16,
+        "fields": {
+            "cliente": 8,
+            "produto": 7,
+            "quantidade": 2,
+            "criado_em": "2024-04-17T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 17,
+        "fields": {
+            "cliente": 8,
+            "produto": 8,
+            "quantidade": 3,
+            "criado_em": "2024-04-18T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 18,
+        "fields": {
+            "cliente": 9,
+            "produto": 9,
+            "quantidade": 4,
+            "criado_em": "2024-04-19T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 19,
+        "fields": {
+            "cliente": 10,
+            "produto": 10,
+            "quantidade": 5,
+            "criado_em": "2024-04-20T00:00:00"
+        }
+    },
+    {
+        "model": "core.pedido",
+        "pk": 20,
+        "fields": {
+            "cliente": 10,
+            "produto": 1,
+            "quantidade": 1,
+            "criado_em": "2024-04-21T00:00:00"
+        }
+    }
+]
