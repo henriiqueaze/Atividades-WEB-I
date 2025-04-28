@@ -1,0 +1,114 @@
+:root {
+  --primary: #283655;
+  --accent: #1f4068;
+  --bg: #f8f9fa;
+  --text-dark: #212529;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: var(--primary) !important;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url('{% static "filmes/img/hero-bg.jpg" %}') center/cover
+    no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+form h2 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+form .btn-success {
+  background-color: var(--accent);
+  border: none;
+}
+form .btn-success:hover {
+  background-color: #16324f;
+}
+form .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.filme-card {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.filme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.filme-card img {
+  height: 250px;
+  object-fit: cover;
+}
+.filme-card .card-body {
+  padding: 1rem;
+}
+.card-title {
+  font-weight: bold;
+  color: var(--primary);
+}
+.card-text {
+  font-size: 0.95rem;
+}
+
+.btn-delete {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-delete:hover {
+  background-color: #dc3545; 
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--white);
+  border-top: 1px solid #dee2e6;
+  padding: 1rem 0;
+}
+footer small {
+  color: #6c757d;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
