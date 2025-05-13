@@ -1,0 +1,52 @@
+{% extends 'products/base.html' %}
+
+{% block content %}
+    <h1 class="my-4">Ver Mais -
+        <small>{{ object.name }}</small>
+    </h1>
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Nome:</strong> {{ object.name }}</li>
+              <li class="list-group-item"><strong>Descrição:</strong> {{ object.descricao }}</li>
+              <li class="list-group-item"><strong>Preço:</strong> R$ {{ object.preco|floatformat:2 }}</li>
+              {% if object.foto %}
+              <li class="list-group-item">
+                <img src="{{ object.foto.url }}" alt="{{ object.name }}" class="img-fluid" />
+              </li>
+              {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row top-buffer mt-3">
+    <div class="col-12 d-flex justify-content-between flex-wrap">
+        <!-- Botões à esquerda -->
+        <div class="d-flex gap-2 flex-wrap" style="width: 25%;">
+            <a href="{% url 'product_edit' object.id %}">
+                <button type="button" class="btn btn-success">Editar</button>
+            </a>
+            <a href="{% url 'product_list' %}" style="margin-left: 2%;">
+                <button type="button" class="btn btn-secondary">Voltar</button>
+            </a>
+        </div>
+
+        <!-- Botão à direita -->
+        <button type="button" class="btn btn-primary" onclick="comprarProduto()">Comprar</button>
+    </div>
+</div>
+
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function comprarProduto() {
+            Swal.fire({
+                title: 'Compra realizada!',
+                text: "Produto '{{ object.name }}' comprado.",
+                icon: 'success',
+                confirmButtonText: 'Ok'
+            });
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'products/base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+  <h1 class="my-4">
+    <small>Lista de Produtos</small>
+  </h1>
+
+  <!-- Filtro de Pesquisa -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <form method="get" class="form-row">
+        <div class="form-group col-md-3">
+          {{ form.name.label_tag }} 
+          {{ form.name|add_class:"form-control" }}
+        </div>
+        <div class="form-group col-md-2">
+          {{ form.type.label_tag }} 
+          {{ form.type|add_class:"form-control" }}
+        </div>
+        <div class="form-group col-md-2">
+          {{ form.min_price.label_tag }} 
+          {{ form.min_price|add_class:"form-control" }}
+        </div>
+        <div class="form-group col-md-2">
+          {{ form.max_price.label_tag }} 
+          {{ form.max_price|add_class:"form-control" }}
+        </div>
+        <div class="form-group col-md-2">
+          {{ form.sort.label_tag }} 
+          {{ form.sort|add_class:"form-control" }}
+        </div>
+        <div class="form-group col-md-1 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mensagens -->
+  {% if messages %}
+    <div class="row">
+      <div class="col-12">
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Cards de Produtos -->
+  <div class="row">
+    {% if products %}
+      {% for product in products %}
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            {% if product.foto %}
+              <img src="{{ product.foto.url }}" class="card-img-top" alt="{{ product.name }}" style="height: 250px; object-fit: cover;">
+            {% else %}
+              <div class="bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                <span class="text-muted">Sem imagem</span>
+              </div>
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">
+                <strong>Preço:</strong> R$ {{ product.preco|floatformat:2 }}<br>
+                <strong>Quantidade:</strong> {{ product.quantidade }}
+              </p>
+              <div class="mt-auto d-flex justify-content-between">
+                <a href="{% url 'product_view' product.id %}" class="btn btn-outline-primary btn-sm">Ver mais</a>
+                <a href="{% url 'product_delete' product.id %}" class="btn btn-outline-danger btn-sm">Apagar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="col-12">
+        <div class="alert alert-warning" role="alert">
+          Nenhum produto disponível. Adicione um novo 
+          <a class="badge badge-info" href="{% url 'product_new' %}"><strong>aqui</strong></a>.
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}
