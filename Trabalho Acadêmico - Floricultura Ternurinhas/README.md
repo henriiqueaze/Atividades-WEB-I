@@ -1,66 +1,29 @@
-# Django CRUD Example
+# 🛍️ Loja Virtual (Página de Produtos)
 
-This is a straightforward CRUD (Create, Read, Update, Delete) application built with Django 4, Bootstrap 4, and PostgreSQL.
+## 📌 Descrição
+Este projeto consiste em uma página de produtos dinâmica e responsiva. Ele exibe uma lista de produtos com imagem, nome, preço e um botão de compra. Além disso, conta com um modal para exibir detalhes do produto e um sistema de filtro interativo via JavaScript.
 
-## Getting Started
+## 🚀 Funcionalidades
+- ✅ Exibição de produtos em um layout responsivo 🚀
+- ✅ Modal para detalhes do produto 🏷️
+- ✅ Filtros para facilitar a busca por preço ou categoria 🎯
+- ✅ Design moderno e intuitivo 🎨
+- ✅ Carrinho de compras 🚘
 
-Follow these steps to get the project up and running on your local environment:
+## 🛠️ Tecnologias Utilizadas
+- HTML5 📄
+- CSS3 🎨
+- JavaScript 🛠️
+- Bootstrap 🟪
 
-### Prerequisites
+## 📷 Captura de Tela
+![Página](assets/Página.png)
 
-Make sure you have Python and PostgreSQL installed on your system.
+---
 
-### Installation
+Desenvolvido por:
+<li><a href="https://github.com/henriiqueaze/" target="_blank">Henrique Azevedo</a></li>
+<li><a href="https://github.com/thiagoports/" target="_blank">Thiago Porto</a></li>
+<li><a href="https://github.com/JoseLucasapp/" target="_blank">José Lucas</a></li>
+<li><a href="https://github.com/ArthurAkil/" target="_blank">Arthur Akill</a></li>
 
-1. Clone the repository to your local machine:
-
-    ```
-    git clone https://github.com/yourusername/django-crud-example.git
-    ```
-
-2. Change to the project directory:
-
-    ```
-    cd django-crud-example
-    ```
-
-3. Install the project dependencies using pip:
-
-    ```
-    pip install -r requirements.txt
-    ```
-
-4. Create the PostgreSQL database by running migrations:
-
-    ```
-    python manage.py migrate
-    ```
-
-5. Start the development server:
-
-    ```
-    python manage.py runserver
-    ```
-
-### Accessing the Django Admin
-
-To access the Django admin panel, you'll need to create a superuser account:
-
-
-Follow the prompts to set up your admin account, and then you can access the admin panel at `/admin`.
-
-## Usage
-
-You can use this CRUD application as a foundation for building your own web applications. It provides basic Create, Read, Update, and Delete functionality that can be extended and customized to suit your specific needs.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Django - The web framework used
-- Bootstrap - The front-end framework used
-- PostgreSQL - The database system used
-
-Feel free to customize and expand upon this project to create your own Django-based web applications. If you have any questions or run into any issues, please refer to the project's [GitHub Issues](https://github.com/yourusername/django-crud-example/issues) for assistance.
